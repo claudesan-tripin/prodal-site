@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactez Prodal pour votre projet en béton lissé au Luxembourg. Devis gratuit." />
+  <title data-i18n="contact.header.title">Contact — Prodal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="assets/images/prodal-logo.gif" alt="Prodal — Béton lissé · Schleifbeton" />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="apropos.html" data-i18n="nav.about">À propos</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-switcher"></div>
+        <button class="menu-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1 data-i18n="contact.header.title">Parlons de votre projet</h1>
+      <p data-i18n="contact.header.text">Nous répondons sous 24h. Visite et devis gratuits, où que vous soyez au Luxembourg.</p>
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <span>/</span>
+        <span data-i18n="nav.contact">Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h3 data-i18n="contact.info.title">Coordonnées</h3>
+
+          <div class="contact-row">
+            <div class="contact-icon">⌂</div>
+            <div>
+              <strong data-i18n="contact.info.address_label">Adresse</strong>
+              <span data-i18n="contact.info.address">Zone Industrielle Giällewee, L-9749 Fischbach</span>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon">☎</div>
+            <div>
+              <strong data-i18n="contact.info.phone_label">Téléphone</strong>
+              <a href="tel:+352269032 06">+352 26 90 32 06</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon">✉</div>
+            <div>
+              <strong data-i18n="contact.info.email_label">Email</strong>
+              <a href="mailto:info@prodal.lu">info@prodal.lu</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon">⏱</div>
+            <div>
+              <strong data-i18n="contact.info.hours_label">Horaires</strong>
+              <span data-i18n="contact.info.hours" style="white-space: pre-line;">Lun – Ven : 08h00 – 18h00
+Sam : sur rendez-vous</span>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div style="margin-top: 30px; border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 16/9; background: var(--white);">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=6.005%2C49.910%2C6.045%2C49.940&amp;layer=mapnik&amp;marker=49.925%2C6.025"
+              style="border: 0; width: 100%; height: 100%;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Carte Prodal Fischbach">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in">
+          <h3 data-i18n="contact.form.title">Demande de devis</h3>
+          <form>
+            <div class="form-success" data-i18n="contact.form.success">Merci ! Nous revenons vers vous sous 24h.</div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="contact.form.name">Nom complet</label>
+                <input type="text" required />
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact.form.email">Email</label>
+                <input type="email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label data-i18n="contact.form.phone">Téléphone</label>
+                <input type="tel" />
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact.form.surface">Surface estimée (m²)</label>
+                <input type="number" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="contact.form.service">Type de finition</label>
+              <select>
+                <option data-i18n="contact.form.service.placeholder">Choisir une finition…</option>
+                <option data-i18n="home.services.s1.title">Béton lissé</option>
+                <option data-i18n="home.services.s2.title">Béton brossé</option>
+                <option data-i18n="home.services.s3.title">Béton semi-poli</option>
+                <option data-i18n="home.services.s4.title">Béton lavé</option>
+                <option data-i18n="home.services.s5.title">Sols industriels</option>
+                <option data-i18n="home.services.s6.title">Traitement lithium</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="contact.form.message">Décrivez votre projet</label>
+              <textarea></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-arrow" data-i18n="contact.form.submit">Envoyer la demande</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo"><img src="assets/images/prodal-logo.gif" alt="Prodal" /></div>
+          <p data-i18n="footer.tagline">Spécialiste du béton lissé au Luxembourg.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">●</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="apropos.html" data-i18n="nav.about">À propos</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.services_title">Finitions</h4>
+          <ul>
+            <li><a href="services.html#lisse" data-i18n="home.services.s1.title">Béton lissé</a></li>
+            <li><a href="services.html#brosse" data-i18n="home.services.s2.title">Béton brossé</a></li>
+            <li><a href="services.html#semi-poli" data-i18n="home.services.s3.title">Béton semi-poli</a></li>
+            <li><a href="services.html#lave" data-i18n="home.services.s4.title">Béton lavé</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Contact</h4>
+          <ul>
+            <li><span data-i18n="contact.info.address">Zone Industrielle Giällewee, L-9749 Fischbach</span></li>
+            <li><a href="tel:+352269032 06">+352 26 90 32 06</a></li>
+            <li><a href="mailto:info@prodal.lu">info@prodal.lu</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2026 Prodal Sàrl. Tous droits réservés.</span>
+        <a href="#" data-i18n="footer.legal">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
